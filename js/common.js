@@ -1,14 +1,15 @@
 $(function() {
 
 	//SVG Fallback
-	if(!Modernizr.svg) {
+	/*if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
-	};
+	};*/
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
+	/*
 	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
@@ -24,6 +25,7 @@ $(function() {
 		});
 		return false;
 	});
+*/
 
 	//Chrome Smooth Scroll
 	try {
@@ -60,3 +62,19 @@ $(window).load(function() {
     });
     $(".gitem").imagefill();*/
 });
+
+
+/* Parallax
+        $.fn.parallax = function(resistance, mouse) {
+          $el = $(this);
+          TweenLite.to($el, 0.2, {
+            x: -((mouse.clientX - window.innerWidth / 2) / resistance),
+            y: -((mouse.clientY - window.innerHeight / 2) / resistance)
+          });
+        };
+
+        $(document).mousemove(function(e) {
+          $(".background").parallax(-100, e);
+          $(".title").parallax(50, e);
+          });
+*/
