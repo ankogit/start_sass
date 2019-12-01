@@ -15,4 +15,4 @@ Add fonts:
 +OpenSansRegular
 +RobotoRegular
 
-Created by anko
+Created by anko.
